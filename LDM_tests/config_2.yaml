@@ -1,0 +1,28 @@
+ldm_version: 40
+special_index:  "cif10" 
+s_version: "s0" 
+ind_name: "cif10" #----------------------------------------------
+input_folder: "./LDM_tests/run_{special_index}"
+output_folder: "./LDM_tests/results_{special_index}_{ind_name}"
+
+
+acts_input: "./logs_jl/vdm_open/{ind_name}_acts"
+epoch: 1999
+
+num_step_time: 20
+num_classes: 10 #100,10,200 ----------------------------------------------------------------
+top_k: 5
+
+shall_draw_basics: true
+shall_draw_densities: true
+btb_on: "sm"
+t_lim: 0
+
+ind_tags: ["train", "test"]
+#ood_tags: ["cifar10", "tin", "mnist","svhn","texture", "places365"] #................................
+ood_tags: ["cifar100", "tin", "mnist", "svhn","texture", "places365" ]
+#ood_tags: [ssb_hard,ninco, inaturalist, textures, openimageo]
+
+repetitions: 20
+t_values: [0.0, 1.0, 20]
+classes: 11 #11,101,201 ----------------------------------------------------------------

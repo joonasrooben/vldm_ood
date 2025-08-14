@@ -1,0 +1,59 @@
+ldm_version: 39
+special_index: 105
+ind_name: "imagenet200"#----------------------------------------------
+folder_name: "vdm_run_{ldm_version}"
+output_folder: "./{ind_name}_results/run_{special_index}"
+acts_input: "../openood/OpenOOD/{ind_name}_acts_s1" #---------------------------------------
+epoch: 1999
+step_factor: 2003 #387,2003
+num_imgs: 100
+num_step: 50
+
+num_step_time: 20
+
+num_classes: 200 #100,10,200 ----------------------------------------------------------------
+top_k: 5
+
+shall_generate:  false
+shall_calculate: true
+shall_calculate_uncond: false
+shall_calculate_densities: false
+shall_calculate_recs: false
+btb_on: "sm"
+t_lim: 0
+
+clip: false
+norm_type: "std"
+nr_div_evals: 1
+
+ff: false
+cos: false
+ind_tags: ["train", "test"] #"gen"
+#ood_tags: ["cifar10", "tin", "mnist", "texture", "places365", "svhn"] #................................
+#ood_tags: ["cifar100", "tin", "mnist", "texture", "places365", "svhn"]
+ood_tags: [inaturalist, textures, openimageo, ssb_hard, ninco]
+
+density_method: 'rk4' #"dopri5"
+repetitions: 20
+t_values: [0.0, 1.0, 20]
+
+model_ckpt: ".../logs_jl/{folder_name}/epoch={epoch}-step={step}.ckpt"
+img_shape: 512
+vocab_size: 256
+embedding_dim: 128
+classes: 201 #11,101,201 ----------------------------------------------------------------
+
+backbone:
+  input_dim: 512
+  output_dim: 512
+  time_emb_dim: 128
+  hidden_dims: [4096,2048,1024, 512, 256]
+  use_context: true
+  context_dim: 128
+  n_fourier: [7, 8, 1]
+
+optimizer_conf:
+  name: "AdamW"
+  lr: 2e-4
+  weight_decay: 1e-2
+  betas: [0.9,0.99]
