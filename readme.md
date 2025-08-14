@@ -1,8 +1,8 @@
-This is the repo of the pytorch implementation of our paper "Probability Density from Latent Diffusion Models for Out-of-Distribution Detection" published in ECAI.
+### This is the codebase of methods and experiments of our paper **"Probability Density from Latent Diffusion Models for Out-of-Distribution Detection"** published in ECAI.
 
 ### Requirements
 
-Requirements to run the code are given in the requirements.txt file.
+Requirements to run the code are given in the `environment.yml` file.
 
 ### Data and Models
 
@@ -18,7 +18,7 @@ The code and the paths are adjusted to work with OpenOOD encoders but can be eas
 
 ### Acknowledegement
 
-Parts of the code used in our work was adapted from the Github repositories such as: "Variational Diffusion Models in Easy PyTorch"\footnote{https://github.com/myscience/variational-diffusion/tree/main}, "OpenOOD"\footnote{https://github.com/Jingkang50/OpenOOD/tree/main}, "Score-Based Generative Modeling through Stochastic Differential Equations"\footnote{https://github.com/yang-song/score_sde}.
+Parts of the code used in our work was adapted from the Github repositories such as: [Variational Diffusion Models in Easy PyTorch](https://github.com/myscience/variational-diffusion/tree/main), [OpenOOD](https://github.com/Jingkang50/OpenOOD/tree/main), [Score-Based Generative Modeling through Stochastic Differential Equations](https://github.com/yang-song/score_sde).
 
 ### Citation
 TBD
