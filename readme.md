@@ -1,4 +1,5 @@
-### This is the codebase of methods and experiments of our paper **"Probability Density from Latent Diffusion Models for Out-of-Distribution Detection"** published in ECAI.
+### Probability Density from Latent Diffusion Models for Out-of-Distribution Detection
+This is the codebase of methods and experiments of our paper **"Probability Density from Latent Diffusion Models for Out-of-Distribution Detection"** published in ECAI.
 
 ### Requirements
 
