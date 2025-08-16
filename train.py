@@ -1,10 +1,10 @@
 import torch
 import sys
 sys.path.append('..')
-from vdm.src.unetfc2 import UNetFC2
+from .src.unetfc2 import UNetFC2
 
-from vdm.src.vdm import VariationalDiffusion
-from vdm.src.schedule import LearnableSchedule, LinearSchedule, FixedLinearSchedule
+from .src.vdm import VariationalDiffusion
+from .src.schedule import LearnableSchedule, LinearSchedule, FixedLinearSchedule
 from pytorch_lightning.callbacks.progress import TQDMProgressBar
 import pytorch_lightning as pl
 from torch.utils.data import DataLoader, Dataset, random_split

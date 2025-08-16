@@ -13,7 +13,7 @@ Data and encoders (RN18) can be downloaded via OpenOOD repo. Trained VDMs are av
 The code and the paths are adjusted to work with OpenOOD encoders but can be easily adapted to needs.
 
 1) With OpenOOD pretrained encoders (like RN18, that we used in our work), one just needs to clone their [repo](https://github.com/Jingkang50/OpenOOD/tree/main) and adapt and run `generate_acts.py` and get the hidden representations
-2) To train the VDM with desired hyperparameter one can use `train-py` 
+2) To train the VDM with desired hyperparameter one can use `train.py` 
 3) To generate new samples and/or calculate densities/losses one can use `generate_and_calculate.py` with accompaning `config.yaml` 
 4) To plot the figures, one can use `plotting.ipynb` jupyter notebook with `config_2.yaml` 
 

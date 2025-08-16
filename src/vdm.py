@@ -25,7 +25,6 @@ from .utils import exists
 from .utils import default
 from .utils import enlarge_as
 
-from .unet import UNet
 from .schedule import LinearSchedule
 from .schedule import LearnableSchedule
 import math
