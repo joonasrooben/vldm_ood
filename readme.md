@@ -22,4 +22,13 @@ The code and the paths are adjusted to work with OpenOOD encoders but can be eas
 Parts of the code used in our work was adapted from the Github repositories such as: [Variational Diffusion Models in Easy PyTorch](https://github.com/myscience/variational-diffusion/tree/main), [OpenOOD](https://github.com/Jingkang50/OpenOOD/tree/main), [Score-Based Generative Modeling through Stochastic Differential Equations](https://github.com/yang-song/score_sde).
 
 ### Citation
-TBD
+```
+@misc{järve2025probabilitydensitylatentdiffusion,
+      title={Probability Density from Latent Diffusion Models for Out-of-Distribution Detection}, 
+      author={Joonas Järve and Karl Kaspar Haavel and Meelis Kull},
+      year={2025},
+      eprint={2508.15737},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2508.15737}, 
+}```
